@@ -21,6 +21,6 @@
         justify-content: center;
         bottom: 0;
         width: 100%;
-        margin-top: 300px;
+        margin-top: 350px;
     }
 </style>

@@ -1,8 +1,6 @@
 <template>
-    <div>
-        <p>Componente de mensagem</p>
         <div>
-            <form id="burger-form" method="POST" @submit="createBurger">
+            <form id="burger-form" method="POST" @submit="createBurguer">
       <div class="input-container">
         <label for="nome">Nome do cliente:</label>
         <input type="text" id="nome" name="nome" v-model="nome" placeholder="Digite o seu nome">
@@ -33,19 +31,77 @@
       </div>
     </form>
         </div>
-    </div>
+
 </template>
 
 <script>
     export default {
-        name: 'BurguerForm'
+        name: 'BurguerForm',
+      data() {
+        return {
+          paes: null,
+          carnes: null,
+          opcionaisdata: null, 
+          nome: null,
+          pao: null,
+          carne: null,
+          opcionais: [],
+          status: "Solicitado",
+          msg: null
+        }
+      },
+      methods: {
+        async getIngredients() {
+          const req = await fetch("http://localhost:3000/ingredientes")
+          const data = await req.json();
+
+          this.paes = data.paes;
+          this.carnes = data.carnes;
+          this.opcionaisdata = data.opcionais;
+        },
+
+        async createBurguer(e) {
+          e.preventDefault()
+
+          const data = {
+            nome: this.nome,
+            carne: this.carne,
+            pao: this.pao,
+            opcionais: Array.from(this.opcionais),
+            status: "solicitado"
+          }
+
+          const dataJson = JSON.stringify(data);
+
+          const req = await fetch("http://localhost:3000/burgers", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: dataJson
+          });
+
+          const res = await req.json();
+
+          //Colocar mensagem de sistemas
+
+          
+
+          //limpar os campos
+          this.nome = ""
+          this.carne = ""
+          this.pao = ""
+          
+        }
+      },
+      mounted() {
+        this.getIngredients()
+      }
     }
 </script>
 
 <style escoped>
      #burger-form {
-    max-width: 400px;
-    margin: 0 auto;
+      max-width: 400px;
+      margin: 0 auto;
   }
 
   .input-container {
