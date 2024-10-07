@@ -19,9 +19,3 @@ export default {
 }
 </script>
 
-<style escoped>
-  body {
-    max-height: 100vh;
-    height: auto;
-  }
-</style>

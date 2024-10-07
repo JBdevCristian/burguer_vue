@@ -173,6 +173,28 @@
       "pao": "Italiano Branco",
       "opcionais": [],
       "status": "solicitado"
+    },
+    {
+      "id": "010f",
+      "nome": "Vinicius",
+      "carne": "Alcatra",
+      "pao": "Integral",
+      "opcionais": [
+        "Bacon",
+        "Salame"
+      ],
+      "status": "solicitado"
+    },
+    {
+      "id": "1bc8",
+      "nome": "Mimi",
+      "carne": "Veggie burger",
+      "pao": "Italiano Branco",
+      "opcionais": [
+        "Bacon",
+        "Salame"
+      ],
+      "status": "solicitado"
     }
   ]
 }
