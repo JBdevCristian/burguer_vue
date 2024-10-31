@@ -83,118 +83,15 @@
   ],
   "burgers": [
     {
-      "id": "8df5",
-      "nome": "teste",
-      "carne": "Picanha",
+      "id": "a2b6",
+      "nome": "Cristian",
+      "carne": "Maminha",
       "pao": "Italiano Branco",
       "opcionais": [
-        "Bacon",
-        "Salame",
-        "Cebola roxa",
         "Pepino",
-        "Tomate"
+        "Bacon"
       ],
-      "status": "solicitado"
-    },
-    {
-      "id": "eb09",
-      "nome": "Giovanna",
-      "carne": "Maminha",
-      "pao": "3 Queijos",
-      "opcionais": [
-        "Bacon",
-        "Salame",
-        "Cebola roxa"
-      ],
-      "status": "solicitado"
-    },
-    {
-      "id": "7904",
-      "nome": "Giovanna",
-      "carne": "Maminha",
-      "pao": "3 Queijos",
-      "opcionais": [
-        "Bacon",
-        "Salame",
-        "Cebola roxa"
-      ],
-      "status": "solicitado"
-    },
-    {
-      "id": "a621",
-      "nome": "Giovanna",
-      "carne": "Picanha",
-      "pao": "Integral",
-      "opcionais": [
-        "Salame",
-        "Bacon",
-        "Cebola roxa"
-      ],
-      "status": "solicitado"
-    },
-    {
-      "id": "2e8f",
-      "nome": "Dago",
-      "carne": "Maminha",
-      "pao": "Pão mexicano",
-      "opcionais": [
-        "Tomate",
-        "Cheddar"
-      ],
-      "status": "solicitado"
-    },
-    {
-      "id": "6fef",
-      "nome": "Karen",
-      "carne": null,
-      "pao": "Pão mexicano",
-      "opcionais": [
-        "Pepino",
-        "Tomate"
-      ],
-      "status": "solicitado"
-    },
-    {
-      "id": "844f",
-      "nome": "Cristian Adagoberto",
-      "carne": "",
-      "pao": "Parmesão e Orégano",
-      "opcionais": [
-        "Tomate",
-        "Pepino",
-        "Cheddar"
-      ],
-      "status": "solicitado"
-    },
-    {
-      "id": "5efd",
-      "nome": "Giovanna",
-      "carne": "Veggie burger",
-      "pao": "Italiano Branco",
-      "opcionais": [],
-      "status": "solicitado"
-    },
-    {
-      "id": "010f",
-      "nome": "Vinicius",
-      "carne": "Alcatra",
-      "pao": "Integral",
-      "opcionais": [
-        "Bacon",
-        "Salame"
-      ],
-      "status": "solicitado"
-    },
-    {
-      "id": "1bc8",
-      "nome": "Mimi",
-      "carne": "Veggie burger",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Bacon",
-        "Salame"
-      ],
-      "status": "solicitado"
+      "status": "Solicitado"
     }
   ]
 }

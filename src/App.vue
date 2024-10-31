@@ -34,7 +34,7 @@ import Navbar from './components/NavBar.vue'
 
     .main-container {
       margin: 50px;
-      height: 250px;
+      min-height: 250px;
     }
 
     h1{
