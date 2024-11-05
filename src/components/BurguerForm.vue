@@ -1,5 +1,6 @@
 <template>
   <Message :msg="msg" v-show="msg" />
+  <ErrMessage :errMsg="errMsg" v-show="errMsg" />
   <div>
     <form id="burger-form" method="POST" @submit="createBurger">
       <div class="input-container">
@@ -36,6 +37,7 @@
 
 <script>
 import Message from './Message'
+import ErrMessage from './ErrMessage.vue'
 
 export default {
   name: "BurgerForm",
@@ -49,7 +51,8 @@ export default {
       carne: null,
       opcionais: [],
       status: "Solicitado",
-      msg: null
+      msg: null,
+      errMsg: null
     }
   },
   methods: {
@@ -75,10 +78,19 @@ export default {
 
       const dataJson = JSON.stringify(data)    
 
-      const req = await fetch("http://localhost:3000/burgers", {
+      if(this.nome == null || this.pao == null || this.carne) {
+
+        this.errMsg = "Preencha corretamente!"
+
+        setTimeout(() => this.errMsg = "", 3000)
+
+      } else {
+
+        const req = await fetch("http://localhost:3000/burgers", {
         method: "POST",
         headers: { "Content-Type" : "application/json" },
         body: dataJson
+        
       });
 
       const res = await req.json()
@@ -97,12 +109,17 @@ export default {
       this.opcionais = []
       
     }
+
+  }
+
+      
   },
   mounted () {
     this.getIngredientes()
   },
   components: {
-    Message
+    Message,
+    ErrMessage
   }
 }
 </script>

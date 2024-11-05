@@ -91,7 +91,32 @@
         "Pepino",
         "Bacon"
       ],
+      "status": "Em produção"
+    },
+    {
+      "id": "bd06",
+      "nome": "Giovanna",
+      "carne": "Maminha",
+      "pao": "Italiano Branco",
+      "opcionais": [
+        "Cheddar",
+        "Tomate",
+        "Pepino",
+        "Cebola roxa",
+        "Salame",
+        "Bacon"
+      ],
       "status": "Solicitado"
+    },
+    {
+      "id": "66d9",
+      "nome": "Dago",
+      "carne": "Veggie burger",
+      "pao": "Integral",
+      "opcionais": [
+        "Cebola roxa"
+      ],
+      "status": "Finalizado"
     }
   ]
 }
