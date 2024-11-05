@@ -74,7 +74,7 @@
     },
     {
       "id": "2",
-      "tipo": "Em produção"
+      "tipo": "produção"
     },
     {
       "id": "3",
@@ -82,17 +82,6 @@
     }
   ],
   "burgers": [
-    {
-      "id": "a2b6",
-      "nome": "Cristian",
-      "carne": "Maminha",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Pepino",
-        "Bacon"
-      ],
-      "status": "Em produção"
-    },
     {
       "id": "bd06",
       "nome": "Giovanna",
@@ -106,7 +95,7 @@
         "Salame",
         "Bacon"
       ],
-      "status": "Solicitado"
+      "status": "produção"
     },
     {
       "id": "66d9",
